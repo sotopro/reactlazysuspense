@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { getInformation } from '../../services'
 
-export const Information = ({ name }) => {
+const Information = ({ name }) => {
     const [information, setInformation] = useState({});
     useEffect(() => {
         let mounted = true
@@ -30,3 +30,5 @@ export const Information = ({ name }) => {
 Information.propTypes = {
     name: PropTypes.string.isRequired
 }
+
+export default Information
