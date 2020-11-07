@@ -48,5 +48,29 @@
       "item": "meat",
       "id": 12
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Super 2020",
+      "image": "https://i.pinimg.com/originals/5a/6f/fb/5a6ffbe80af676b3250b4168ba8be687.png",
+      "description": "Las mejores zapatillas del 2020 hechas por nike, en oferta y con promoción de lanzamiento",
+      "price": 2500,
+      "stock": 20,
+      "colors": [
+        {
+          "id": 1,
+          "color": "#8EE3F5"
+        },
+        {
+          "id": 2,
+          "color": "70CAD1"
+        },
+        {
+          "id": 3,
+          "color": "B08EA2"
+        }
+      ]
+    }
   ]
 }
