@@ -30,3 +30,20 @@ export const getInformation = (name) => {
         }, 1500)
     })
 }
+
+export const getList = () => {
+    return fetch('http://localhost:3333/list')
+        .then(data => data.json())
+}
+
+export const setItem = (item) => {
+    console.log('item service', item)
+    return fetch('http://localhost:3333/list', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ item })
+    })
+    .then(data => data.json())
+}
